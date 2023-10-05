@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html 	lang="en"
+		xmlns="http://www.w3.org/1999/xhtml"
+      	xmlns:h="http://xmlns.jcp.org/jsf/html"
+      	xmlns:a="http://xmlns.jcp.org/jsf/facelets"
+      	xmlns:f= "http://xmlns.jcp.org/jsf/core"> 
+<h:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>PAGINA DE LOGIN</title>
+  <h:outputStylesheet library="css" name="main1.css"  />
+</h:head>
+
+<h:body>
+	
+	<header>
+	Login
+	</header>
+	<div id="cabecera">
+		
+		<div id="main">
+			<br/>
+			<h:form id="forms">
+				Usuario  : <h:inputText id="usuario"
+							 value="#{login.usr}" />
+				<br/><br/>			 
+				Password: <h:inputSecret id="contrasena"
+							 value="#{login.pwd}" />
+				<br/><br/>	
+						 			 
+				<h:commandButton value="Login" action="#{login.autenticar}" />			 
+			</h:form>
+		</div>
+	</div>
+	
+	<footer>
+		<br/><p id="pie">Designed by: Garcia and Carrion</p>
+	</footer>
+	
+
+</h:body>
+
+</html>
+
+

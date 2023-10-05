@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>administrador</title>
+</h:head>
+<h:body>
+	<h:form>
+
+		<div id="main">
+			<img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/14797031062_4cbe0f218f_o.jpg?itok=V5iq993c"/> 
+			<p  style="text-align: center; color: #08088A; padding-top: 5%"> Bienvenido Usuario Administrador  <b><i> #{login.user}</i></b></p>
+			<p  style="text-align: center; color: #7D0552; padding-top: 5%">  <b><i> How to Become an Astronaut </i></b></p>
+			<p style="padding-left: 30%;color: #7D0552; text-align: justify">Puede editar lo siguiente:</p>
+			<p style="padding-left: 30%; text-align: justify; font-style: italic">Menú</p>
+			<p style="padding-left: 30%; text-align: justify; font-style: italic">Contenido</p>
+			<p style="padding-left: 30%; text-align: justify; font-style: italic">Insertar imágenes</p>
+			
+			
+	<br/><br/>
+			<h:commandLink action="#{login.logout}"  value="Logout"> </h:commandLink>
+		
+		</div>
+		
+	
+		
+		
+	</h:form>
+</h:body>
+</html>
